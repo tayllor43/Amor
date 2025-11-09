@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Romântica - Adrielle</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fecfef, #ffecd2);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #e91e63;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        .signature {
+            font-weight: bold;
+            font-size: 1.5em;
+            color: #e91e63;
+            margin-top: 20px;
+        }
+        .music-player {
+            margin: 20px 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        /* Animação sutil de corações */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .heart {
+            font-size: 2em;
+            color: #e91e63;
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>Uma Mensagem Especial</h1>
+        <p>Hoje é o seu dia, e eu quero que você saiba o quanto é especial pra mim. Desde que você chegou, trouxe mais cor, paz e carinho pra minha vida. Com você, tudo parece se encaixar, até os dias mais simples se tornam bonitos só por poder te ter por perto, mesmo que em pensamento.</p>
+        <p>Admiro a pessoa que você é: o coração leve, o jeito atencioso, o sorriso que sempre me desarma. Tenho sorte por você ter cruzado o meu caminho e por poder dividir com você momentos, risadas e sentimentos sinceros.</p>
+        <p>Você desperta em mim um carinho que cresce a cada dia, uma vontade genuína de cuidar, de estar presente e de ver você bem. É como se o tempo tivesse esperado o momento certo pra que nossas vidas se encontrassem. E, quando aconteceu, tudo fez sentido, como se fosse pra ser.</p>
+        <p>Parabéns, meu amor. Que a vida te retribua com tudo de bom e que a gente continue construindo, pouco a pouco, algo bonito e verdadeiro. Que não faltem motivos pra sorrir, sonhos pra realizar e amor pra sentir.</p>
+        <p>Obrigada por ser quem é, por me fazer bem, por me trazer leveza e por me permitir viver algo tão sincero. Que o seu novo ciclo venha cheio de luz, conquistas e momentos felizes… e que, em cada um deles, eu possa estar de alguma forma com você.</p>
+        <p class="signature">Com amor, Adrielle.</p>
+        
+        <!-- Player de Música -->
+        <div class="music-player">
+            <h2>🎵 Música Especial</h2>
+            <audio controls>
+                <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav"> <!-- Substitua por seu link de música (ex: MP3 de uma música romântica) -->
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <p>Substitua o link acima por uma música romântica (ex: hospede no Google Drive e use o link direto).</p>
+        </div>
+        
+        <!-- Galeria de Fotos -->
+        <div class="gallery">
+            <h2>📸 Momentos Especiais</h2>
+            <img src="https://via.placeholder.com/150x150/ff9a9e/ffffff?text=Foto+1" alt="Foto romântica 1"> <!-- Substitua pelos links das suas fotos -->
+            <img src="https://via.placeholder.com/150x150/fecfef/ffffff?text=Foto+2" alt="Foto romântica 2">
+            <img src="https://via.placeholder.com/150x150/ffecd2/ffffff?text=Foto+3" alt="Foto romântica 3">
+            <p>Adicione mais imagens substituindo os links acima (ex: hospede no Imgur e use o URL).</p>
+        </div>
+    </div>
+    
+    <script>
+        // Script simples para animação (opcional)
+        document.addEventListener('DOMContentLoaded', function() {
+            const hearts = document.querySelectorAll('.heart');
+            hearts.forEach(heart => {
+                heart.style.animationDelay = Math.random() * 2 + 's';
+            });
+        });
+    </script>
+</body>
+</html>
